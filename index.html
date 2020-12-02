@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Ingreso al sistema</title>
-</head>
-<body>
-    <div>
-        <form name="login">
-            <h2>Bienvenido a nuestro sistema</h2>
-            <div>
-                <div>
-                    <h5>Email</h5>
-                    <input type="email" name="" id="email" required>
-                </div>
-            </div>
+  </head>
+  <body>
+    <div class="container">
 
-            <div>
-                <div>
-                    <h5>Contraseña</h5>
-                    <input type="password" name="" id="password" required>
-                </div>
+      <div class="content">
+
+        <form name="login">
+          <h2 class="title">Bienvenido a nuestro sistema</h2>
+
+          <div class="the-input">
+            <div class="date">
+              <h5>Email</h5>
+              <input type="email" name="" class="input" id="email" required />
             </div>
-            <div>
-                <div>
-                    <input type="checkbox" name="" id="acepto" required>
-                </div>
+          </div>
+
+          <div class="the-input">
+            <div class="date">
+              <h5>Contraseña</h5>
+              <input type="password" name="" class="input" id="password" required />
             </div>
-            <input type="button" value="ingresar">
+          </div>
+
+          <div>
+            <div>
+              <input type="checkbox" name="" id="acepto" required />
+            </div>
+          </div>
+
+          <input type="button" value="ingresar" class="btn" />
         </form>
+
+      </div>
+
     </div>
-</body>
+  </body>
 </html>
