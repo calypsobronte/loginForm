@@ -17,6 +17,11 @@ $ git clone https://github.com/calypsobronte/loginForm.git
 $ cd loginForm
 ```
 
+## Acceder al login
+|  Email   |     Contraseña    |
+| ---------- | ---------- |
+| codelinamaria@gmail.com   | 123456789  |
+
 ## Criterios de aceptacion
 - [x] Sera una vista donde el usuario vera un Login, si las credenciales son correctas podrá ver la otra pagina.
 Este login debe de tener dos campos, uno de correo y otro de contraseña, además debe de tener un campo donde acepte términos y condiciones de tratamiento de datos (Puede ser cualquier texto, lo importante es que no lo deje ingresar si no los acepta), si algún campo es incorrecto debe de mostrar algún cambio en el formulario, puede se un popup o que los campos de ingreso cambien de color, etc.
