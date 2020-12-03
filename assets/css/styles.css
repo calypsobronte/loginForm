@@ -244,6 +244,46 @@ h1 {
 }
 
 
+/* chat */
+
+/* Add styles to the form container */
+.form-chat {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  justify-content: center;
+}
+
+/* Full-width textarea */
+.form-chat textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 100px;
+}
+
+/* When the textarea gets focus, do something */
+.form-chat textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-chat .btn {
+  background-color: #4CAF50;
+  color: rgb(22, 22, 22);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
 /* medidas*/
 @media screen and (max-width: 1050px) {
   .container {

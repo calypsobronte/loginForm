@@ -46,8 +46,8 @@ function volver() {
 document.getElementById("buttonone").addEventListener(
   "click",
   function () {
-    document.getElementById("welcome").hidden = true;
-    document.getElementById("awesome").hidden = false;
+    document.getElementById("panel").hidden = true;
+    document.getElementById("video-chat").hidden = false;
   },
   false
 );
@@ -55,9 +55,8 @@ document.getElementById("buttonone").addEventListener(
 document.getElementById("buttontwo").addEventListener(
     "click",
     function () {
-      document.getElementById("welcome").hidden = true;
-      document.getElementById("awesome").hidden = false;
+      document.getElementById("panel").hidden = true;
+      document.getElementById("video").hidden = false;
     },
     false
   );
-  

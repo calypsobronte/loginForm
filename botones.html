@@ -10,21 +10,29 @@
 
 <body>
     <div class="container panel">
-        <div id="welcome">
+        <div id="panel">
             <h1>Bienvenido a nuestro sistema</h1>
             <p>Tienes diferentes opciones en los siguientes botones.</p>
             <input type="button" value="ver video y chatear" class="button" id="buttonone" />
             <input type="button" value="ver video" class="button" id="buttontwo" />
             <input type="button" value="Iniciar sesion" class="button" onclick="inicio()" />
         </div>
-        <div id="awesome" hidden>
+        <div id="video-chat" hidden>
             <h1>video con chat!</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BelWIG90sfc" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+            <form class="form-chat">
+                <h1>Chat</h1>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+            
+                <button type="button" class="btn">Send</button>
+            </form>
             <input type="button" value="volver al menu" class="button" onclick="volver()" />
+                   
+            
         </div>
-        <div id="awesome" hidden>
+        <div id="video" hidden>
             <h1>video!</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BelWIG90sfc" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
