@@ -117,26 +117,101 @@ form {
   background-position: right;
 }
 
-.ico{
-	color: #d9d9d9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.ico {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ico i{
-	transition: .3s;
+.ico i {
+  transition: 0.3s;
 }
 
-.the-input.focus > div > h5{
-	top: -5px;
-	font-size: 15px;
+.the-input.focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
 }
 
-.the-input.focus > .ico > i{
-	color: #38d39f;
+.the-input.focus > .ico > i {
+  color: #38d39f;
 }
 
+/* terminos y condiciones modal */
+#modal {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  position: fixed;
+  top: -100vh;
+  left: 1;
+  height: 50vh;
+  width: 50vw;
+  transition: all 0.5s;
+}
+#modal p {
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  font-size: 80%;
+  text-align: center;
+}
+
+#show-modal {
+  display: none;
+}
+#show-modal + label {
+  display: inline-table;
+  margin: auto;
+  color: #000;
+  padding: 0 1em;
+  font-size: 80%;
+  cursor: pointer;
+}
+#show-modal + label:hover {
+  background: #cfe2ee;
+}
+#show-modal:checked ~ #modal {
+  top: 0;
+}
+
+#show-modal:checked ~ #close-modal + label {
+  display: block;
+}
+
+#close-modal {
+  display: none;
+}
+
+#close-modal + label {
+  position: absolute;
+  top: 1em;
+  right: 12em;
+  z-index: 100;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgb(248, 246, 245);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+  transition: all 0.5s;
+}
+
+#close-modal:checked ~ #modal {
+  top: -100vh;
+}
+
+#close-modal:checked + label {
+  display: none;
+}
 
 /* medidas*/
 @media screen and (max-width: 1050px) {
@@ -164,6 +239,12 @@ form {
   .content {
     justify-content: center;
   }
+  #modal{
+    font-size: 50%;
+  }
+  #show-modal{
+    font-size: 50%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -175,6 +256,13 @@ form {
     font-size: 1rem;
     margin: 4px 0;
   }
+  #modal{
+    font-size: 50%;
+  }
+  #show-modal{
+    font-size: 50%;
+  }
+
 }
 
 @media screen and (max-width: 200px) {
@@ -185,16 +273,29 @@ form {
     font-size: 1rem;
     margin: 4px 0;
   }
-  .btn{
+  .btn {
     font-size: 90%;
-}
+  }
+  #modal{
+    font-size: 50%;
+  }
+  #show-modal{
+    font-size: 50%;
+  }
+
 }
 
 @media screen and (max-width: 195px) {
-    form {
-      width: 50px;
-    }
-    .btn{
-        font-size: 50%;
-    }
+  form {
+    width: 50px;
   }
+  .btn {
+    font-size: 50%;
+  }
+  #modal{
+    font-size: 50%;
+  }
+  #show-modal{
+    font-size: 50%;
+  }
+}

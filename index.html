@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <title>Ingreso al sistema</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="content">
+        <form name="login">
+          <h2>Bienvenido a nuestro sistema</h2>
 
-        <div class="content">
+          <div class="the-input">
+            <div class="ico">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Email</h5>
+              <input type="email" name="" class="input" id="email" required />
+            </div>
+          </div>
 
-            <form name="login">
-                <h2>Bienvenido a nuestro sistema</h2>
+          <div class="the-input">
+            <div class="ico">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div>
+              <h5>Contraseña</h5>
+              <input
+                type="password"
+                name=""
+                class="input"
+                id="password"
+                required
+              />
+            </div>
+          </div>
 
-                <div class="the-input">
-                    <div class="ico">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div>
-                        <h5>Email</h5>
-                        <input type="email" name="" class="input" id="email" required />
-                    </div>
+          <div>
+            <div>
+              <label for="acepto">
+                <input type="checkbox" name="" id="acepto" required />
+                <input id="show-modal" type="radio" name="modal" />
+                <label for="show-modal"
+                  >Acepte términos y condiciones de tratamiento de datos</label
+                >
+                <input id="close-modal" type="radio" name="modal" />
+                <label for="close-modal">X</label>
+                <div id="modal">
+                  <p>
+                    Política de Tratamiento de Datos Personales De acuerdo con
+                    la Ley Estatutaria 1581 de 2012 de Protección de Datos y con
+                    el Decreto 1377 del 2013, autorizo, como titular de los
+                    datos, que éstos sean incorporados en una base de datos
+                    responsabilidad de la Organización Salazar y Herrera, siendo
+                    tratados con la finalidad de gestión administrativa,
+                    comercial y de servicios sobre nuestros productos, con base
+                    a la política de tratamiento: poner link de la pagina web
+                    donde esta la política o donde se encuentre alojada. De
+                    igual modo, declaro haber sido informado de que puedo
+                    ejercitar los derechos de acceso, corrección, supresión,
+                    revocación o reclamo por infracción sobre mis datos,
+                    mediante escrito dirigido a la Organización nombre de la
+                    empresa a la dirección de correo electrónico correo
+                    electrónico, indicando en el asunto el derecho que deseo
+                    ejercitar, o mediante correo ordinario remitido a la
+                    dirección física de la empresa.
+                  </p>
                 </div>
+              </label>
+            </div>
+          </div>
 
-                <div class="the-input">
-                    <div class="ico"> 
-                        <i class="fas fa-lock"></i>
-                   </div>
-                    <div>
-                        <h5>Contraseña</h5>
-                        <input type="password" name="" class="input" id="password" required />
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <label for="acepto"></label>
-                        <input type="checkbox" name="" id="acepto" required />
-                    </div>
-                </div>
-
-                <input type="button" value="ingresar" class="btn" />
-            </form>
-
-        </div>
-
+          <input type="button" value="ingresar" class="btn" onclick="validate()" />
+        </form>
+      </div>
     </div>
     <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
