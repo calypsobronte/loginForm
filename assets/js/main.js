@@ -39,3 +39,25 @@ function validate() {
 function inicio() {
   window.location.href = "index.html";
 }
+function volver() {
+    window.location.href = "botones.html";
+  }
+
+document.getElementById("buttonone").addEventListener(
+  "click",
+  function () {
+    document.getElementById("welcome").hidden = true;
+    document.getElementById("awesome").hidden = false;
+  },
+  false
+);
+
+document.getElementById("buttontwo").addEventListener(
+    "click",
+    function () {
+      document.getElementById("welcome").hidden = true;
+      document.getElementById("awesome").hidden = false;
+    },
+    false
+  );
+  

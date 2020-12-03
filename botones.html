@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>DOM</title>
 </head>
+
 <body>
-    
+    <div class="container panel">
+        <div id="welcome">
+            <h1>Bienvenido a nuestro sistema</h1>
+            <p>Tienes diferentes opciones en los siguientes botones.</p>
+            <input type="button" value="ver video y chatear" class="button" id="buttonone" />
+            <input type="button" value="ver video" class="button" id="buttontwo" />
+            <input type="button" value="Iniciar sesion" class="button" onclick="inicio()" />
+        </div>
+        <div id="awesome" hidden>
+            <h1>video con chat!</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BelWIG90sfc" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <input type="button" value="volver al menu" class="button" onclick="volver()" />
+        </div>
+        <div id="awesome" hidden>
+            <h1>video!</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BelWIG90sfc" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <input type="button" value="volver al menu" class="button" onclick="volver()" />
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
+
 </html>
