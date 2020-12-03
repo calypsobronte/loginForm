@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4dc6c54d-9b30-4c23-82e4-63a68708b9e0/deploy-status)](https://app.netlify.com/sites/pruebacss/deploys)
 # Prueba de CSS
 ## loginForm
 
